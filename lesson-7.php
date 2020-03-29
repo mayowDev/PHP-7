@@ -1,5 +1,5 @@
 <?php 
-
+	// loops
 	$ninjas = ['shaun', 'ryu', 'yoshi'];
 
 	// for($i = 0; $i < count($ninjas); $i++){

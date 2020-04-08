@@ -1,3 +1,18 @@
+<?php 
+
+  session_start();
+
+  //$_SESSION['name'] = 'mario'; overide session
+
+  if($_SERVER['QUERY_STRING'] == 'noname'){
+    //unset($_SESSION['name']);
+    session_unset(); //unset all sessions
+  }
+
+  $name = $_SESSION['name'];
+
+?>
+
 <head>
 	<title>Pizza Hut</title>
 	<!-- Compiled and minified CSS -->
@@ -26,6 +41,7 @@
 <body class="grey lighten-4">
 	<nav class="white z-depth-0">
     <div class="container">
+	  <li class="grey-text">Hello <?php echo htmlspecialchars($name); ?></li>
       <a href="index.php" class="brand-logo brand-text">Pizza Hut</a>
       <ul id="nav-mobile" class="right hide-on-small-and-down">
         <li><a href="add.php" class="btn brand z-depth-0">Add a Pizza</a></li>

@@ -26,6 +26,8 @@
 		echo 'file does not exist';
 	}
 
+	// make directory 
+	mkdir('quotes');
 
 
 

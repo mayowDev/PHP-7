@@ -8,8 +8,8 @@
     //unset($_SESSION['name']);
     session_unset(); //unset all sessions
   }
-
-  $name = $_SESSION['name'];
+    // null coalesce is used as fallback
+  $name = $_SESSION['name'] ?? 'Guest';
 
 ?>
 

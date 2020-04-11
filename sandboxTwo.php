@@ -29,6 +29,33 @@
 	// make directory 
 	mkdir('quotes');
 
+	// filesystem shorthand
+
+	
+	// opening a file for reading
+	// $handle = fopen($file, 'r'); = read only
+
+	// read the file
+	// echo fread($handle, filesize($file));
+	// echo fread($handle, 112);
+
+	// read a single line
+	// echo fgets($handle); get single line
+
+	// read a single character
+	// echo fgetc($handle); get single charcter
+
+	// $handle = fopen($file, 'r+'); read and write
+	// $handle = fopen($file, 'a+'); == sameabove
+
+	// writing to a file
+	// fwrite($handle, "\nEverything popular is wrong.");
+
+	// fclose($file);	
+
+	unlink($file);
+
+?>
 
 
 ?>

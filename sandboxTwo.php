@@ -83,7 +83,7 @@
 				$this->name = $name;
 				return "name updated to $name";
 			}else{
-				return 'not a valid name'
+				return 'not a valid name';
 			}
 		}		
 
